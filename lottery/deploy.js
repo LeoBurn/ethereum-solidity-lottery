@@ -21,6 +21,7 @@ const deploy = async () =>{
                         .send({gas:'1000000',from: account});
     
     console.log('Contract deployed to: ', contract.options.address);
+    console.log(interface)
     provider.engine.stop();
 
 };
